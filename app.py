@@ -19,7 +19,10 @@ from utils.gemini_client import (
     tailor_cv_for_jd,
 )
 from utils.pdf_exporter import export_cv_to_pdf
+import sys
+import os
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 # ── Page config ──────────────────────────────────────────────────────────────
 st.set_page_config(
